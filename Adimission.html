@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+header { 
+ border-bottom: 2px solid rgb(0, 0, 0);
+ border-top: 2px solid black;
+ text-align: center;
+ padding: 10px;
+ background-color: rgb(22, 79, 143);
+ color: white;
+ font-style: italic;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header img{
+float: left;
+width: 100px;
+height: 100px;
+}
+
+a{
+margin: 5%;
+color: rgb(255, 255, 255);
+border-radius: 2px;
+font-size: larger;
+text-decoration: none;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            background-color:azure;
+        }
+
+        .containerx{
+            max-width: 600px;
+            margin-left: 35%;
+            margin-top: 5%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: royalblue;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color:royalblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #991b1b;
+        }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <img src="images/sealBlue.jpg" alt=""><h2>St PETERS COLLEGE OF ARTS AND SCIENCE</h2>
+        <div class="navi"> 
+             <a href="index.html">Home</a>
+             <a href="Contact.html">Contact</a>
+        </div>
+    </header>
+    <div class="containerx">
+        <h2>St peters College of Arts and Science Admission Form</h2>
+        <form action="https://formsubmit.co/lakshangarrix1234@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="program">Program of Interest:</label>
+            <select id="program" name="program">
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+            </select>
+
+            <label for="message">Additional Information (if any):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
